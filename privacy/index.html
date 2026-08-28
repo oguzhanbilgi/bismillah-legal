@@ -20,63 +20,67 @@
 <section id="tr" lang="tr">
 <h2>1. Türkçe — Bismillah Gizlilik Politikası</h2>
 <h3>Kısaca</h3>
-<p>Bismillah önce-cihaz (local-first) yaklaşımıyla çalışır. Günlük plan, namaz takibi, Kur'an okuma konumu, yer imleri, öğrenme ilerlemesi, zikir ve kişiselleştirme gibi temel kullanım verileri öncelikle cihazında saklanır. Uygulamayı kullanmak için ad, e-posta veya telefon numarasıyla hesap oluşturman gerekmez.</p>
-<p>Bu, hiçbir verinin cihazdan çıkmadığı anlamına gelmez. Aşağıda ağ kullanan servisler ve hangi amaçla kullanıldıkları açıkça belirtilir.</p>
+<p>Bismillah önce-cihaz (local-first) yaklaşımıyla çalışır. Planın, ilerlemen, tercihlerin ve Asistan geçmişinin hassas olmayan kısmı öncelikle kendi cihazında saklanır. Uygulamayı kullanmak için ad, e-posta veya telefon numarasıyla hesap oluşturman gerekmez.</p>
+<p>Bu, hiçbir verinin cihazdan çıkmadığı anlamına gelmez. Aşağıda ağ kullanan servisler ve hangi amaçla kullanıldıkları açıklanır.</p>
 
-<h3>Cihazında saklanan veriler</h3>
+<h3>Cihazında saklananlar</h3>
 <ul>
 <li>Onboarding tercihleri ve türetilen plan profili</li>
 <li>30 günlük plan, günlük plan, rutin ve ilerleme kayıtları</li>
 <li>Namaz takip geçmişi ve hatırlatıcı tercihleri</li>
 <li>Kur'an okuma konumu, yer imleri ve okuyucu tercihleri</li>
 <li>Öğrenme kayıtları ve zikir sayacı tercihleri</li>
-<li>Dil, tema ve diğer uygulama tercihleri</li>
-<li>Asistan sohbet geçmişinin hassas olmayan kısmı; uygulamadaki saklama sınırları dahilinde</li>
+<li>Dil, tema, hesaplama yöntemi ve diğer uygulama tercihleri</li>
+<li>Asistan sohbet geçmişinin hassas olmayan kısmı, uygulamadaki saklama sınırları dahilinde</li>
 </ul>
 
 <h3>Asistan ve hassas sorular</h3>
-<p>Bismillah Asistanı dış bir üretken yapay zekâ servisine soru göndermez. Cevaplar uygulamayla birlikte sunulan, yayınlanmış ve kaynağı doğrulanmış Öğren içeriklerinden oluşturulur. Hüküm, kişisel durum ve ibadet kuralı niteliğindeki hassas sorular ile bunlara verilen cevaplar geçmişe kaydedilmez.</p>
+<p>Bismillah Asistanı sorularını dış bir üretken yapay zekâ servisine göndermez. Cevaplar uygulamayla birlikte sunulan, yayınlanmış ve kaynağı doğrulanmış içerikten oluşturulur. Hüküm, kişisel durum ve ibadet kuralı niteliğindeki hassas sorular ile bunlara verilen cevaplar geçmişe kaydedilmez.</p>
+
+<h3>Bulut yedekleme ve hesap</h3>
+<p>İbadet geçmişi ve kişisel ilerleme için etkin bir hesap senkronizasyonu veya bulut yedekleme sistemi yoktur. Uygulamayı kaldırman veya uygulama verilerini temizlemen cihazda tutulan yerel ilerlemeyi kalıcı olarak silebilir.</p>
+<p>Tek istisna abonelik durumudur: Bismillah+ satın alman Google Play hesabına bağlıdır ve satın alımları geri yükleme yoluyla yeniden doğrulanabilir. Bu, ibadet verilerinin yedeklendiği anlamına gelmez; ibadet verileri bu yolla yedeklenmez.</p>
 
 <h3>Konum ve izinler</h3>
 <ul>
-<li><strong>Konum:</strong> yalnız izin verdiğinde namaz vakitleri ve kıble yönünü hesaplamak için kullanılır. Arka planda konum takibi yapılmaz.</li>
-<li><strong>Bildirimler ve tam zamanlı alarm:</strong> seçtiğin namaz ve rutin hatırlatıcılarını cihazında planlamak için kullanılır.</li>
+<li><strong>Konum:</strong> yalnız izin verdiğinde namaz vakitleri ve kıble yönünü cihazında hesaplamak için kullanılır. Arka planda konum takibi yapılmaz ve konum ibadet takibi amacıyla bir sunucuya gönderilmez.</li>
+<li><strong>Bildirimler:</strong> seçtiğin namaz ve rutin hatırlatıcılarını cihazında planlamak için kullanılır.</li>
+<li><strong>Tam zamanlı alarm:</strong> Android sürümüne göre hatırlatıcıların tam vaktinde gelmesi için gerekebilir; izin yoksa uygulama yaklaşık zamanlamaya dönebilir.</li>
 </ul>
 
 <h3>Ağ kullanan servisler</h3>
 <ul>
-<li><strong>Kur'an sesi:</strong> seçilen kıraat kayıtları MP3Quran üzerinden internetten aktarılabilir. Bu durumda cihazın ilgili servise doğrudan bağlanır.</li>
-<li><strong>Kaynak bağlantıları:</strong> Tanzil, QuranEnc, MP3Quran ve resmî Diyanet gibi kaynak bağlantılarını açtığında sistem tarayıcın ilgili siteye bağlanır; bu siteler kendi gizlilik politikalarına tabidir.</li>
-<li><strong>Firebase anonim kimlik doğrulaması:</strong> uygulama, ad/e-posta istemeden anonim bir teknik kullanıcı kimliği oluşturmak için Google Firebase ile iletişim kurabilir. Bu kimlik uygulama işlevleri ve Bismillah+ erişim kontrolü için kullanılabilir.</li>
+<li><strong>Kur'an sesi:</strong> seçilen kıraat kayıtları MP3Quran üzerinden internetten aktarılabilir; bu durumda cihazın ilgili servise doğrudan bağlanır.</li>
+<li><strong>Kaynak bağlantıları:</strong> Tanzil, QuranEnc, MP3Quran ve resmî Diyanet gibi kaynak bağlantılarını açtığında sistem tarayıcın ilgili siteye bağlanır ve bu siteler kendi gizlilik politikalarına tabidir.</li>
+<li><strong>Firebase anonim kimlik doğrulaması:</strong> uygulama, ad veya e-posta istemeden anonim bir teknik kullanıcı kimliği oluşturmak için Google Firebase ile iletişim kurabilir.</li>
+<li><strong>RevenueCat:</strong> abonelik tekliflerini göstermek, satın alma/geri yükleme akışlarını yönetmek ve Bismillah+ erişim durumunu doğrulamak için kullanılır.</li>
 </ul>
 
-<h3>Bismillah+, Google Play ve RevenueCat</h3>
-<p>Bismillah+, isteğe bağlı ücretli abonelik özellikleri sunabilir. Android satın alma işlemi Google Play Billing üzerinden yürütülür. Kart veya ödeme aracı bilgilerin Bismillah tarafından görülmez veya saklanmaz; ödeme Google Play tarafından işlenir.</p>
-<p>Abonelik tekliflerini göstermek, satın alma/geri yükleme işlemlerini yönetmek ve Bismillah+ erişimini doğrulamak için RevenueCat kullanılır. Uygulama RevenueCat'e Firebase tarafından oluşturulan anonim teknik kullanıcı kimliğini ve abonelikle ilgili gerekli teknik bilgileri iletebilir. Bunlar ürün kimliği, satın alma/yenileme durumu, satın alma ve bitiş tarihleri, mağaza kaynağı ve ödeme sorunu sinyali gibi abonelik durumunu belirlemek için gereken alanları içerebilir. Bu veriler ibadet geçmişi, Kur'an okuma içeriği, zikir veya Asistan soruları ile birleştirilmez.</p>
+<h3>Reklam, ölçümleme ve ödeme</h3>
+<ul>
+<li><strong>Reklam:</strong> mevcut Android closed-test sürümünde reklam SDK'sı bulunmaz ve uygulama içinde reklam gösterilmez. Namaz geçmişi, Kur'an okuma, Öğren kayıtları, zikir sayaçları ve Asistan soruları reklam verisi olarak işlenmez veya reklam ağına gönderilmez.</li>
+<li><strong>Ölçümleme:</strong> mevcut analitik arayüzü kullanıcı davranışı olaylarını bir analitik arka ucuna gönderecek şekilde etkin değildir; mevcut uygulama davranışında bu olaylar dış analitik servisine gönderilmez.</li>
+<li><strong>Google Play Billing:</strong> uygulamada Google Play Faturalandırma bulunur ve Bismillah+ aboneliği satın alınabilir. Ödemeyi Google Play işler; kart, banka veya fatura bilgileriniz Bismillah'a ulaşmaz ve uygulama tarafından saklanmaz.</li>
+<li><strong>RevenueCat ve teknik kimlik:</strong> Firebase tarafından oluşturulan anonim teknik kimlik RevenueCat'e App User ID olarak verilir. RevenueCat, abonelik ve yetki durumunu yönetmek için gerekli teknik kimliği ve abonelik bilgilerini işleyebilir. Bu kimlik ad, e-posta veya rehber bilgisi değildir.</li>
+<li><strong>Google Play'e örtülü kimlik:</strong> Bismillah ham Firebase anonim kimliğini doğrudan Google Play'e göndermez. RevenueCat'in Android yazılımı ilgili satın alma akışlarında bu kimliğin SHA-256 ile karma alınmış, örtülü bir türevini Google Play Billing'e "örtülü hesap kimliği" olarak iletebilir. Bu, satın alma işlemenin teknik bir parçasıdır.</li>
+<li><strong>İbadet verisi ödeme akışında yer almaz:</strong> namaz geçmişin, Kur'an okuman, Öğren kayıtların, zikir sayaçların ve Asistan soruların bu teknik kimliğin parçası değildir ve ödeme akışı üzerinden RevenueCat'e veya Google Play'e gönderilmez.</li>
+<li><strong>Ücretsiz çekirdek ve Bismillah+:</strong> çekirdek ibadet araçları ücretsiz ve önce-cihaz çalışır. Bismillah+ özellikleri yetki (entitlement) doğrulamasına tabidir; erişim doğrulanamazsa premium özellikler açılmaz.</li>
+</ul>
 <p>RevenueCat hizmetleri kendi veri işleme koşullarına tabidir: <a href="https://www.revenuecat.com/privacy/" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.</p>
 
-<h3>Reklam ve ölçümleme</h3>
-<ul>
-<li>Bismillah'ın mevcut Android closed-test sürümünde reklam SDK'sı bulunmaz ve uygulama içinde reklam gösterilmez.</li>
-<li>Uygulamanın mevcut analitik arayüzü bir ölçümleme arka ucuna kullanıcı davranışı gönderecek şekilde etkin değildir. Bu davranış gelecekte değişirse politika ve gerekli mağaza beyanları yayın öncesinde güncellenir.</li>
-</ul>
-
-<h3>Bulut yedekleme ve hesap</h3>
-<p>İbadet geçmişi ve kişisel ilerleme için etkin bir hesap senkronizasyonu veya bulut yedekleme sistemi yoktur. Uygulamayı kaldırman veya uygulama verilerini temizlemen, cihazda tutulan yerel ilerlemeyi geri getirilemeyecek şekilde silebilir.</p>
-
 <h3>Çocuklar</h3>
-<p>Bismillah çocuklara yönelik bir ürün olarak tasarlanmamıştır ve yaşa dayalı reklam profillemesi yapmaz.</p>
+<p>Bismillah çocuklara yönelik bir ürün olarak tasarlanmamıştır ve çocuklara özel veri toplama veya yaşa dayalı reklam profillemesi yapmaz.</p>
 
 <h3>Kontrol ve talepler</h3>
-<p>Yerel verileri uygulama içindeki ilgili sıfırlama/silme seçenekleriyle veya cihaz ayarlarından uygulama verilerini temizleyerek kaldırabilirsin. Abonelik ve üçüncü taraf servislerde işlenen teknik verilerle ilgili gizlilik talepleri için <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a> adresine yazabilirsin. Google Play tarafından tutulan satın alma kayıtları Google'ın kendi saklama ve yasal yükümlülüklerine tabidir.</p>
+<p>Yerel verileri uygulama içindeki ilgili sıfırlama/silme seçenekleriyle veya cihaz ayarlarından uygulama verilerini temizleyerek kaldırabilirsin. Gizlilik soruları ve talepleri için <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a> adresine yazabilirsin. Google Play ve RevenueCat tarafından işlenen veriler ayrıca kendi saklama, güvenlik ve yasal yükümlülüklerine tabidir.</p>
 </section>
 
 <hr>
 <section id="en" lang="en">
 <h2>2. English — Bismillah Privacy Policy</h2>
 <h3>In short</h3>
-<p>Bismillah is local-first. Core usage data such as your daily plan, prayer tracking, Quran reading position, bookmarks, learning progress, dhikr and personalization settings are stored primarily on your device. You do not need to create an account with your name, email address or phone number to use the app.</p>
-<p>This does not mean that no data ever leaves your device. The network services used by the app are described below.</p>
+<p>Bismillah is local-first. Your plan, progress, preferences and the non-sensitive portion of Assistant history are stored primarily on your device. You do not need to create an account with your name, email address or phone number to use the app.</p>
+<p>This does not mean that no data ever leaves your device. The network-based services used by the app and their purposes are described below.</p>
 
 <h3>Stored on your device</h3>
 <ul>
@@ -84,102 +88,113 @@
 <li>30-day plan, daily plan, routines and progress records</li>
 <li>Prayer tracking history and reminder preferences</li>
 <li>Quran reading position, bookmarks and reader preferences</li>
-<li>Learning records and dhikr counter preferences</li>
-<li>Language, theme and other app preferences</li>
-<li>The non-sensitive portion of Assistant history, subject to the app's retention limits</li>
+<li>Learning records and dhikr-counter preferences</li>
+<li>Language, theme, calculation method and other app preferences</li>
+<li>The non-sensitive portion of Assistant conversation history, subject to the app's retention limits</li>
 </ul>
 
 <h3>Assistant and sensitive questions</h3>
-<p>The Bismillah Assistant does not send your questions to an external generative-AI service. Answers are produced from published, source-verified Learn content shipped with the app. Sensitive ruling, personal-case and worship-rule questions and their answers are not saved to history.</p>
+<p>The Bismillah Assistant does not send your questions to an external generative-AI service. Answers are produced from published, source-verified content shipped with the app. Sensitive ruling, personal-case and worship-rule questions and their answers are not saved to history.</p>
+
+<h3>Cloud backup and accounts</h3>
+<p>There is no active account sync or cloud backup for worship history and personal progress. Uninstalling the app or clearing app data may permanently remove progress stored locally on your device.</p>
+<p>The single exception is subscription state: a Bismillah+ purchase is associated with your Google Play account and can be re-verified through restore purchases. This does not mean that your worship data is backed up; worship data is not backed up through this flow.</p>
 
 <h3>Location and permissions</h3>
 <ul>
-<li><strong>Location:</strong> used only with your permission to calculate prayer times and Qibla direction. Bismillah does not track location in the background.</li>
-<li><strong>Notifications and exact alarms:</strong> used to schedule prayer and routine reminders on your device.</li>
+<li><strong>Location:</strong> used only with your permission to calculate prayer times and Qibla direction on your device. Bismillah does not track location in the background and does not upload it for worship tracking.</li>
+<li><strong>Notifications:</strong> used to schedule the prayer and routine reminders you choose on your device.</li>
+<li><strong>Exact alarms:</strong> depending on the Android version, this permission may be needed for reminders to arrive at an exact time; without it the app may fall back to inexact scheduling.</li>
 </ul>
 
 <h3>Network services</h3>
 <ul>
 <li><strong>Quran audio:</strong> selected recitations may be streamed from MP3Quran, causing your device to connect directly to that service.</li>
 <li><strong>Source links:</strong> links to Tanzil, QuranEnc, MP3Quran and official Diyanet sources open in your system browser and are governed by those sites' privacy policies.</li>
-<li><strong>Firebase anonymous authentication:</strong> the app may contact Google Firebase to create a technical anonymous user identifier without asking for your name or email. This identifier may be used for app functionality and Bismillah+ access control.</li>
+<li><strong>Firebase anonymous authentication:</strong> the app may contact Google Firebase to create a technical anonymous user identifier without asking for your name or email address.</li>
+<li><strong>RevenueCat:</strong> used to present subscription offerings, manage purchase/restore flows and verify Bismillah+ access state.</li>
 </ul>
 
-<h3>Bismillah+, Google Play and RevenueCat</h3>
-<p>Bismillah+ may offer optional paid subscription features. Android purchases are processed through Google Play Billing. Bismillah does not receive or store your payment-card details; payment processing is handled by Google Play.</p>
-<p>RevenueCat is used to present subscription offerings, manage purchase/restore flows and verify Bismillah+ access. The app may send RevenueCat the anonymous technical user identifier created through Firebase and the subscription information necessary to determine entitlement state. This may include product identifier, purchase/renewal status, purchase and expiration dates, store source and billing-issue signals. This data is not combined with your prayer history, Quran reading content, dhikr activity or Assistant questions.</p>
+<h3>Advertising, measurement and payments</h3>
+<ul>
+<li><strong>Advertising:</strong> the current Android closed-test build contains no advertising SDK and shows no in-app advertising. Prayer history, Quran reading, Learn records, dhikr counts and Assistant questions are not processed as advertising data or sent to an advertising network.</li>
+<li><strong>Measurement:</strong> the current analytics interface is not enabled to send user-behaviour events to an analytics backend; in the current app behaviour these events are not sent to an external analytics service.</li>
+<li><strong>Google Play Billing:</strong> Google Play Billing is present in the app and a Bismillah+ subscription can be purchased. Google Play processes the payment; your card, bank or billing credentials do not reach Bismillah and are not stored by the app.</li>
+<li><strong>RevenueCat and the technical identifier:</strong> the anonymous technical identifier created through Firebase is provided to RevenueCat as its App User ID. RevenueCat may process that identifier and subscription information necessary to manage subscription and entitlement state. The identifier is not your name, email address or contacts.</li>
+<li><strong>Obfuscated identifier provided to Google Play:</strong> Bismillah does not directly send your raw Firebase anonymous identifier to Google Play. RevenueCat's Android software may, in applicable purchase flows, provide Google Play Billing with a SHA-256 hashed and obfuscated derivative of that identifier as an "obfuscated account identifier". This is a technical part of purchase processing.</li>
+<li><strong>Worship data does not enter the payment flow:</strong> your prayer history, Quran reading, Learn records, dhikr counts and Assistant questions are not part of that technical identifier and are not sent to RevenueCat or Google Play through the payment flow.</li>
+<li><strong>Free core and Bismillah+:</strong> core worship tools remain free and local-first. Bismillah+ features are subject to entitlement verification; if access cannot be verified, premium features do not open.</li>
+</ul>
 <p>RevenueCat services are subject to its own processing terms: <a href="https://www.revenuecat.com/privacy/" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.</p>
 
-<h3>Advertising and measurement</h3>
-<ul>
-<li>The current Android closed-test build contains no advertising SDK and shows no in-app advertising.</li>
-<li>The app's current analytics interface is not enabled to send user-behaviour events to an analytics backend. If this changes, this policy and required store disclosures will be updated before release.</li>
-</ul>
-
-<h3>Cloud backup and accounts</h3>
-<p>There is no active account sync or cloud backup for worship history and personal progress. Uninstalling the app or clearing app data may permanently remove locally stored progress.</p>
-
 <h3>Children</h3>
-<p>Bismillah is not designed as a children's product and does not perform age-based advertising profiling.</p>
+<p>Bismillah is not designed as a children's product and does not run children-specific data collection or age-based advertising profiling.</p>
 
 <h3>Your control and requests</h3>
-<p>You can remove local data using the relevant reset/delete controls in the app or by clearing app data in device settings. For privacy requests concerning subscription-related technical data processed through third-party services, contact <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a>. Purchase records retained by Google Play are subject to Google's own retention and legal obligations.</p>
+<p>You can remove local data using the relevant reset/delete controls in the app or by clearing app data in device settings. For privacy questions or requests, contact <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a>. Data processed by Google Play and RevenueCat is also subject to their own retention, security and legal obligations.</p>
 </section>
 
 <hr>
 <section id="ar" lang="ar" dir="rtl">
 <h2>3. العربية — سياسة خصوصية Bismillah</h2>
 <h3>باختصار</h3>
-<p>يعمل Bismillah وفق مبدأ التخزين المحلي أولًا. تُحفظ بيانات الاستخدام الأساسية مثل الخطة اليومية، ومتابعة الصلاة، وموضع قراءة القرآن، والإشارات المرجعية، وتقدّم التعلّم، والذكر، وإعدادات التخصيص أساسًا على جهازك. ولا تحتاج إلى إنشاء حساب باسمك أو بريدك الإلكتروني أو رقم هاتفك لاستخدام التطبيق.</p>
-<p>هذا لا يعني أن أي بيانات لا تغادر جهازك مطلقًا. خدمات الشبكة التي يستخدمها التطبيق موضّحة أدناه.</p>
+<p>يعمل Bismillah وفق مبدأ التخزين المحلي أولًا. تُحفظ خطتك وتقدّمك وتفضيلاتك والجزء غير الحساس من سجل المساعد أساسًا على جهازك. ولا تحتاج إلى إنشاء حساب باسمك أو بريدك الإلكتروني أو رقم هاتفك لاستخدام التطبيق.</p>
+<p>هذا لا يعني أن أي بيانات لا تغادر جهازك مطلقًا. تُشرح أدناه الخدمات الشبكية التي يستخدمها التطبيق وأغراضها.</p>
 
 <h3>البيانات المخزنة على جهازك</h3>
 <ul>
-<li>تفضيلات الإعداد وملف الخطة المشتق منها</li>
+<li>تفضيلات التهيئة وملف الخطة المشتق منها</li>
 <li>خطة الثلاثين يومًا والخطة اليومية والروتينات وسجلات التقدّم</li>
 <li>سجل متابعة الصلاة وتفضيلات التذكير</li>
 <li>موضع قراءة القرآن والإشارات المرجعية وتفضيلات القارئ</li>
 <li>سجلات التعلّم وتفضيلات عدّاد الذكر</li>
-<li>اللغة والمظهر وتفضيلات التطبيق الأخرى</li>
-<li>الجزء غير الحسّاس من سجل المساعد ضمن حدود الاحتفاظ في التطبيق</li>
+<li>اللغة والمظهر وطريقة الحساب وتفضيلات التطبيق الأخرى</li>
+<li>الجزء غير الحساس من سجل محادثة المساعد ضمن حدود الاحتفاظ في التطبيق</li>
 </ul>
 
 <h3>المساعد والأسئلة الحساسة</h3>
-<p>لا يرسل مساعد Bismillah أسئلتك إلى خدمة ذكاء اصطناعي توليدي خارجية. تُنشأ الإجابات من محتوى تعلّم منشور ومتحقق من مصدره ومضمّن في التطبيق. ولا تُحفظ في السجل الأسئلة الحساسة المتعلقة بالأحكام أو الحالات الشخصية أو قواعد العبادة ولا إجاباتها.</p>
+<p>لا يرسل مساعد Bismillah أسئلتك إلى خدمة ذكاء اصطناعي توليدي خارجية. تُنتج الإجابات من محتوى منشور ومتحقق من مصادره ومضمّن في التطبيق. ولا تُحفظ أسئلة الأحكام والحالات الشخصية وقواعد العبادة الحساسة ولا إجاباتها في السجل.</p>
+
+<h3>النسخ الاحتياطي السحابي والحسابات</h3>
+<p>لا توجد مزامنة حساب فعالة أو نسخة احتياطية سحابية لسجل العبادة والتقدّم الشخصي. وقد يؤدي حذف التطبيق أو مسح بياناته إلى إزالة التقدّم المخزن محليًا بصورة دائمة.</p>
+<p>الاستثناء الوحيد هو حالة الاشتراك: يرتبط شراء Bismillah+ بحساب Google Play ويمكن إعادة التحقق منه عبر استعادة المشتريات. ولا يعني ذلك أن بيانات عبادتك محفوظة احتياطيًا؛ فبيانات العبادة لا تُنسخ احتياطيًا عبر هذا المسار.</p>
 
 <h3>الموقع والأذونات</h3>
 <ul>
-<li><strong>الموقع:</strong> يُستخدم فقط بعد إذنك لحساب أوقات الصلاة واتجاه القبلة. ولا يتتبع Bismillah الموقع في الخلفية.</li>
-<li><strong>الإشعارات والمنبّه الدقيق:</strong> تُستخدم لجدولة تذكيرات الصلاة والروتين على جهازك.</li>
+<li><strong>الموقع:</strong> يُستخدم بإذنك فقط لحساب أوقات الصلاة واتجاه القبلة على جهازك. لا يتتبع Bismillah موقعك في الخلفية ولا يرفعه لأغراض متابعة العبادة.</li>
+<li><strong>الإشعارات:</strong> تُستخدم لجدولة تذكيرات الصلاة والروتين التي تختارها على جهازك.</li>
+<li><strong>المنبّهات الدقيقة:</strong> قد يلزم هذا الإذن بحسب إصدار Android لوصول التذكيرات في وقت دقيق، وبدونه قد يعود التطبيق إلى جدولة تقريبية.</li>
 </ul>
 
-<h3>خدمات الشبكة</h3>
+<h3>الخدمات الشبكية</h3>
 <ul>
-<li><strong>صوت القرآن:</strong> قد تُبث التلاوات المختارة من MP3Quran، وفي هذه الحالة يتصل جهازك مباشرة بتلك الخدمة.</li>
-<li><strong>روابط المصادر:</strong> تُفتح روابط Tanzil وQuranEnc وMP3Quran ومصادر ديانت الرسمية في متصفح النظام وتخضع لسياسات الخصوصية الخاصة بتلك المواقع.</li>
-<li><strong>مصادقة Firebase المجهولة:</strong> قد يتصل التطبيق بخدمة Google Firebase لإنشاء معرّف تقني مجهول دون طلب اسمك أو بريدك الإلكتروني. ويمكن استخدام هذا المعرّف لوظائف التطبيق والتحقق من الوصول إلى Bismillah+.</li>
+<li><strong>صوت القرآن:</strong> قد تُبث التلاوات المختارة من MP3Quran، مما يجعل جهازك يتصل بهذه الخدمة مباشرة.</li>
+<li><strong>روابط المصادر:</strong> تُفتح روابط Tanzil وQuranEnc وMP3Quran ومصادر ديانت الرسمية في متصفح النظام وتخضع لسياسات خصوصية تلك المواقع.</li>
+<li><strong>مصادقة Firebase المجهولة:</strong> قد يتصل التطبيق بخدمة Google Firebase لإنشاء معرّف تقني مجهول دون طلب اسمك أو بريدك الإلكتروني.</li>
+<li><strong>RevenueCat:</strong> تُستخدم لعرض عروض الاشتراك وإدارة الشراء والاستعادة والتحقق من حالة الوصول إلى Bismillah+.</li>
 </ul>
 
-<h3>Bismillah+ وGoogle Play وRevenueCat</h3>
-<p>قد يقدّم Bismillah+ ميزات اشتراك مدفوعة اختيارية. تتم عمليات الشراء على أندرويد عبر Google Play Billing. لا يستلم Bismillah بيانات بطاقتك أو وسيلة الدفع ولا يخزنها؛ وتتم معالجة الدفع عبر Google Play.</p>
-<p>يُستخدم RevenueCat لعرض عروض الاشتراك وإدارة الشراء أو الاستعادة والتحقق من الوصول إلى Bismillah+. وقد يرسل التطبيق إلى RevenueCat المعرّف التقني المجهول الذي تنشئه Firebase والمعلومات التقنية اللازمة لتحديد حالة الاشتراك، مثل معرّف المنتج وحالة الشراء أو التجديد وتواريخ الشراء والانتهاء ومصدر المتجر وإشارات مشكلات الفوترة. ولا تُدمج هذه البيانات مع سجل صلاتك أو محتوى قراءتك للقرآن أو نشاط الذكر أو أسئلة المساعد.</p>
-<p>تخضع خدمات RevenueCat لشروط معالجة البيانات الخاصة بها: <a href="https://www.revenuecat.com/privacy/" rel="noopener noreferrer">RevenueCat Privacy Policy</a>.</p>
-
-<h3>الإعلانات والقياس</h3>
+<h3>الإعلانات والقياس والمدفوعات</h3>
 <ul>
-<li>لا تحتوي نسخة أندرويد الحالية للاختبار المغلق على حزمة إعلانات ولا تعرض إعلانات داخل التطبيق.</li>
-<li>واجهة التحليلات الحالية في التطبيق غير مفعلة لإرسال أحداث سلوك المستخدم إلى خادم تحليلات. وإذا تغيّر ذلك فسيتم تحديث هذه السياسة وإفصاحات المتجر المطلوبة قبل النشر.</li>
+<li><strong>الإعلانات:</strong> لا تحتوي نسخة الاختبار المغلق الحالية لأندرويد على حزمة إعلانات ولا تعرض إعلانات داخل التطبيق. ولا تُعالَج سجلات الصلاة أو قراءة القرآن أو سجلات التعلّم أو عدّادات الذكر أو أسئلة المساعد كبيانات إعلانية ولا تُرسل إلى شبكة إعلانات.</li>
+<li><strong>القياس:</strong> واجهة التحليلات الحالية غير مفعّلة لإرسال أحداث سلوك المستخدم إلى خادم تحليلات خارجي، ولا تُرسل هذه الأحداث إلى خدمة تحليلات خارجية في السلوك الحالي للتطبيق.</li>
+<li><strong>فوترة Google Play:</strong> تتوفر فوترة Google Play في التطبيق ويمكن شراء اشتراك Bismillah+. تعالج Google Play عملية الدفع، ولا تصل بيانات البطاقة أو الحساب البنكي أو بيانات الفوترة إلى Bismillah ولا يخزنها التطبيق.</li>
+<li><strong>RevenueCat والمعرّف التقني:</strong> يُعطى المعرّف التقني المجهول الذي تنشئه Firebase إلى RevenueCat بوصفه App User ID. وقد تعالج RevenueCat هذا المعرّف ومعلومات الاشتراك اللازمة لإدارة حالة الاشتراك والاستحقاق. ولا يمثل هذا المعرّف اسمك أو بريدك الإلكتروني أو جهات اتصالك.</li>
+<li><strong>المعرّف المُعمّى المقدم إلى Google Play:</strong> لا يرسل Bismillah معرّف Firebase المجهول الخام مباشرة إلى Google Play. وقد يزوّد برنامج RevenueCat لأندرويد، في مسارات الشراء المناسبة، Google Play Billing بمشتق من هذا المعرّف مجزّأ باستخدام SHA-256 ومُعمّى بوصفه "معرّف الحساب المُعمّى". وهذا جزء تقني من معالجة الشراء.</li>
+<li><strong>بيانات العبادة لا تدخل في مسار الدفع:</strong> سجل الصلاة وقراءة القرآن وسجلات التعلّم وعدّادات الذكر وأسئلة المساعد ليست جزءًا من هذا المعرّف التقني ولا تُرسل إلى RevenueCat أو Google Play عبر مسار الدفع.</li>
+<li><strong>الأساس المجاني وBismillah+:</strong> تبقى أدوات العبادة الأساسية مجانية وتعمل محليًا أولًا. أما ميزات Bismillah+ فتخضع للتحقق من الاستحقاق، وإذا تعذّر التحقق من الوصول فلا تُفتح الميزات المدفوعة.</li>
 </ul>
-
-<h3>النسخ الاحتياطي والحسابات</h3>
-<p>لا توجد مزامنة حساب أو نسخة احتياطية سحابية فعالة لسجل العبادة والتقدم الشخصي. وقد يؤدي حذف التطبيق أو مسح بياناته إلى حذف التقدم المحلي نهائيًا.</p>
+<p>تخضع خدمات RevenueCat لشروط معالجة البيانات الخاصة بها: <a href="https://www.revenuecat.com/privacy/" rel="noopener noreferrer">سياسة خصوصية RevenueCat</a>.</p>
 
 <h3>الأطفال</h3>
-<p>لم يُصمم Bismillah كمنتج موجّه للأطفال ولا يجري تصنيفًا إعلانياً قائمًا على العمر.</p>
+<p>لم يُصمم Bismillah كمنتج موجّه للأطفال، ولا يجري جمع بيانات خاصًا بالأطفال أو تصنيفًا إعلانيًا قائمًا على العمر.</p>
 
 <h3>التحكم والطلبات</h3>
-<p>يمكنك حذف البيانات المحلية من خلال خيارات إعادة التعيين أو الحذف ذات الصلة داخل التطبيق أو بمسح بيانات التطبيق من إعدادات الجهاز. ولطلبات الخصوصية المتعلقة بالبيانات التقنية للاشتراك التي تعالجها خدمات خارجية، تواصل معنا على <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a>. وتخضع سجلات الشراء التي تحتفظ بها Google Play لسياسات الاحتفاظ والالتزامات القانونية الخاصة بـ Google.</p>
+<p>يمكنك إزالة البيانات المحلية باستخدام أدوات إعادة التعيين والحذف داخل التطبيق أو بمسح بيانات التطبيق من إعدادات الجهاز. للأسئلة أو طلبات الخصوصية راسلنا على <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a>. كما تخضع البيانات التي تعالجها Google Play وRevenueCat لسياسات الاحتفاظ والأمان والالتزامات القانونية الخاصة بهما.</p>
 </section>
 
-<footer>Bismillah · Android closed test · This page uses no analytics, tracking cookies or external assets.</footer>
-</main></body></html>
+<footer>
+<p>Bismillah · Privacy Policy · <a href="mailto:bismillahappsupport@gmail.com">bismillahappsupport@gmail.com</a></p>
+</footer>
+</main></body>
+</html>
